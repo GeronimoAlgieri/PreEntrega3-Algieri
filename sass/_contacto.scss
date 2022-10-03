@@ -1,0 +1,55 @@
+main .pagContacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    justify-content: center;
+    section .contacto {
+      margin-left: 100px;
+      .telefono {
+        margin-left: 180px;
+        margin-bottom: 100px;
+    }
+  }
+}
+main section .email {
+    margin-left: 180px;
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+  form {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 500px;
+    margin-top: 40px;
+    padding: 10px;
+    h2 {
+      display: flex;
+      justify-content: center;
+      input, textarea {
+        font-size: 15px;
+        textarea {
+          min-height: 100px;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px){
+  main .pagContacto{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#boton {
+  background-color: #31384A;
+  color: white;
+  padding: 10px;
+}
+  
+#boton:hover {
+  cursor: pointer;
+}

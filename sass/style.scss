@@ -1,0 +1,66 @@
+@import "nav";
+@import "footer";
+@import "nosotros";
+@import "productos";
+@import "servicios";
+@import "contacto";
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+  }
+  
+  .lista-productos a {
+    text-decoration: none;
+    color: black;
+  }
+  .img-principal {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-principal img {
+    min-width: 280px;
+  }
+
+  /* Inicio */
+  .destacados {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  
+  .productos-destacados img {
+    height: 250px;
+    width: 288px;
+  }
+  
+  .productos-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 70px;
+  }
+  
+  @media (max-width: 1575px) {
+    .productos-1 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 1185px) {
+    .productos-1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 790px) {
+    .productos-1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

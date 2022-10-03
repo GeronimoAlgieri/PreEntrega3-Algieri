@@ -1,0 +1,20 @@
+section .servicio {
+    margin-top: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 300px;
+    h2 {
+        display: flex;
+        justify-content: center;
+        p {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    section .servicio {
+    margin: 100px 30px 300px 30px;
+    }
+}
