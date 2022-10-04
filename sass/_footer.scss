@@ -19,37 +19,38 @@ footer {
             align-items: center;
             img {
                 width: 130px;
-                h2 {
-                    color: #fff;
-                    margin-bottom: 25px;
-                    font-size: 20px;
-                    p {
-                        color: #efefef;
-                        margin-bottom: 2px;
-                        font-size: 15px;
-                        font-family: "Gemunu Libre", sans-serif;
-                        .red-social a {
-                            display: inline-block;
-                            text-decoration: none;
-                            width: 45px;
-                            height: 45px;
-                            line-height: 45px;
-                            color: #fff;
-                            margin-right: 10px;
-                            background-color: #0d2033;
-                            text-align: center;
-                        }
-                    }
-                }
             }
         }
     }
+}
+
+footer .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-family: "Gemunu Libre", sans-serif;
+}
+footer .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
 footer .grupo-2 {
     color: #efefef;
     text-align: center;
     padding-bottom: 5px;
     font-family: "Playfair Display", serif;
+}
+footer .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
 }
 p {
     border: 5px;

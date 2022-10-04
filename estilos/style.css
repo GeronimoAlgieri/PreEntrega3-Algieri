@@ -40,18 +40,28 @@ footer .grupo-1 .box figure {
 footer .grupo-1 .box figure img {
   width: 130px;
 }
-footer .grupo-1 .box figure img h2 {
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-footer .grupo-1 .box figure img h2 p {
+
+footer .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 2px;
   font-size: 15px;
   font-family: "Gemunu Libre", sans-serif;
 }
-footer .grupo-1 .box figure img h2 p .red-social a {
+
+footer .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+footer .grupo-2 {
+  color: #efefef;
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+footer .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -61,13 +71,6 @@ footer .grupo-1 .box figure img h2 p .red-social a {
   margin-right: 10px;
   background-color: #0d2033;
   text-align: center;
-}
-
-footer .grupo-2 {
-  color: #efefef;
-  text-align: center;
-  padding-bottom: 5px;
-  font-family: "Playfair Display", serif;
 }
 
 p {
@@ -156,18 +159,14 @@ section .master {
   margin-top: 100px;
 }
 
-.lista-productos {
-  margin-left: 100px;
-  margin-top: -30px;
-}
-
 .productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-right: 300px;
   margin-top: -20px;
 }
-.productos .container {
+
+.container {
   width: 100%;
   max-width: 1200px;
   height: 430px;
@@ -176,7 +175,7 @@ section .master {
   justify-content: center;
   margin-bottom: 80px;
 }
-.productos .container .card {
+.container .card {
   width: 330px;
   height: 430px;
   border-radius: 8px;
@@ -186,154 +185,38 @@ section .master {
   text-align: center;
   transition: all 0.25s;
 }
-.productos .container .card .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.productos .container .card .card:hover img {
+.container .card img {
   width: 330px;
   height: 300px;
 }
-.productos .container .card .card:hover img h4 {
+.container .card img h4 {
   font-weight: 600;
 }
-.productos .container .card .card:hover img h4 p {
+.container .card img h4 p {
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
 }
-.productos .container .card .card:hover img h4 p a {
+.container .card img h4 p a {
   font-weight: 500;
   text-decoration: none;
   color: #3498db;
 }
 
-@media (max-width: 1446px) {
-  .lista-productos {
-    margin-left: 20px;
-  }
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 1365px) {
-  .productos {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 80px;
-  }
-  .container {
-    padding-right: 80px;
-  }
+
+.listaProductos {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(231, 134, 6);
+  padding: 20px;
+  gap: 50px;
+  margin-bottom: 30px;
 }
-@media (max-width: 1185px) {
-  .container {
-    padding-right: 30px;
-  }
-}
-@media (max-width: 1085px) {
-  .container {
-    padding-right: 0;
-  }
-  .productos {
-    margin-left: 0;
-  }
-}
-@media (max-width: 980px) {
-  .lista-productos {
-    margin-left: 1px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 950px) {
-  .productos {
-    grid-template-columns: repeat(1, 1fr);
-    margin-right: 150px;
-  }
-  .lista-productos {
-    margin-left: 100px;
-  }
-}
-@media (max-width: 655px) {
-  .lista-productos {
-    margin-left: 10px;
-  }
-}
-@media (max-width: 552px) {
-  .lista-productos {
-    margin-left: 0;
-    padding-left: -20px;
-    padding-left: 10px;
-    margin: 0;
-  }
-}
-@media (max-width: 520px) {
-  .lista-productos {
-    margin-left: 10px;
-    font-size: 10px;
-  }
-  .lista-productos h5 {
-    font-size: 12px;
-  }
-  .container .card {
-    width: 240px;
-    height: 350px;
-  }
-  .container .card img {
-    width: 250px;
-    height: 200px;
-  }
-  .productos {
-    margin-left: 50px;
-  }
-}
-@media (max-width: 455px) {
-  div .container {
-    width: 255px;
-    height: 400px;
-    margin-left: -10px;
-  }
-  .productos {
-    margin-left: -10px;
-  }
-}
-@media (max-width: 405px) {
-  .lista-productos {
-    margin-left: -10px;
-  }
-}
-@media (max-width: 386px) {
-  .container .card {
-    width: 220px;
-    height: 330px;
-  }
-  .container .card img {
-    width: 230px;
-    height: 180px;
-  }
-}
-@media (max-width: 366px) {
-  .container .card {
-    width: 210px;
-    height: 320px;
-  }
-  .container .card img {
-    width: 220px;
-    height: 170px;
-  }
-}
-@media (max-width: 346px) {
-  .lista-productos .limpieza {
-    font-size: 9px;
-  }
-  .lista-productos .bazar {
-    font-size: 9px;
-  }
-  .container .card {
-    width: 190px;
-    height: 300px;
-  }
-  .container .card img {
-    width: 200px;
-    height: 150px;
-  }
-}
+
 section .servicio {
   margin-top: 100px;
   margin-left: 180px;
@@ -440,10 +323,28 @@ body {
 }
 
 /* Inicio */
-.destacados {
-  display: flex;
-  justify-content: center;
+.novedad {
   margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  background: rgb(176, 118, 0);
+  background: linear-gradient(90deg, rgb(176, 118, 0) 0%, rgb(205, 106, 13) 29%, rgb(205, 155, 0) 100%);
+  color: white;
+  padding: 10px;
+}
+
+.destacados {
+  margin-top: 40px;
+  text-align: center;
+  background: rgb(176, 118, 0);
+  background: linear-gradient(90deg, rgb(176, 118, 0) 0%, rgb(205, 106, 13) 29%, rgb(205, 155, 0) 100%);
+  color: white;
+  padding: 10px;
+}
+
+.novedades {
+  display: grid;
+  grid-template-columns: repeat(4, 480px);
 }
 
 .productos-destacados img {
@@ -457,18 +358,35 @@ body {
   margin-top: 70px;
 }
 
-@media (max-width: 1575px) {
+@media (min-width: 375px) {
   .productos-1 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .novedades {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-@media (max-width: 1185px) {
+@media (min-width: 890px) {
   .productos-1 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .novedades {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media (max-width: 790px) {
+@media (min-width: 1300px) {
   .productos-1 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .novedades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1600px) {
+  .productos-1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .novedades {
+    grid-template-columns: repeat(4, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */

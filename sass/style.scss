@@ -6,61 +6,94 @@
 @import "contacto";
 
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
-  }
-  
-  .lista-productos a {
-    text-decoration: none;
-    color: black;
-  }
-  .img-principal {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .img-principal img {
-    min-width: 280px;
-  }
+  padding: 0;
+  margin: 0;
+}
 
-  /* Inicio */
-  .destacados {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+.lista-productos a {
+  text-decoration: none;
+  color: black;
+}
+.img-principal {
+  display: flex;
+  justify-content: center;
+}
+
+.img-principal img {
+  min-width: 280px;
+}
+
+/* Inicio */
+.novedad{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  background: rgb(176,118,0);
+  background: linear-gradient(90deg, rgba(176,118,0,1) 0%, rgba(205,106,13,1) 29%, rgba(205,155,0,1) 100%);
+  color: white;
+  padding: 10px;
+}
+.destacados {
+  margin-top: 40px;
+  text-align: center;
+  background: rgb(176,118,0);
+  background: linear-gradient(90deg, rgba(176,118,0,1) 0%, rgba(205,106,13,1) 29%, rgba(205,155,0,1) 100%);
+  color: white;
+  padding: 10px;
+}
+.novedades{
+  display: grid;
+  grid-template-columns: repeat(4, 480px);
+}
+
+.productos-destacados img {
+  height: 250px;
+  width: 288px;
+}
+
+.productos-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 70px;
+}
+
+@media (min-width: 375px){
+  .productos-1{
+    grid-template-columns: repeat(1,1fr);
   }
-  
-  .productos-destacados img {
-    height: 250px;
-    width: 288px;
+  .novedades{
+    grid-template-columns: repeat(1,1fr);
   }
-  
-  .productos-1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 70px;
+}
+@media (min-width: 890px){
+  .productos-1{
+    grid-template-columns: repeat(2,1fr);
   }
-  
-  @media (max-width: 1575px) {
-    .productos-1 {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .novedades{
+    grid-template-columns: repeat(2,1fr);
   }
-  @media (max-width: 1185px) {
-    .productos-1 {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+@media (min-width: 1300px){
+  .productos-1{
+    grid-template-columns: repeat(3,1fr);
   }
-  @media (max-width: 790px) {
-    .productos-1 {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .novedades{
+    grid-template-columns: repeat(2,1fr);
   }
+}
+@media (min-width: 1600px){
+  .productos-1{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .novedades{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
