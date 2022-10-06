@@ -221,6 +221,21 @@ section .master {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1182px) {
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 788px) {
+  .productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 394px) {
+  .container {
+    padding: 0;
+  }
+}
 section .servicio {
   margin-top: 100px;
   margin-left: 180px;
@@ -242,27 +257,30 @@ section .servicio h2 p {
     margin: 100px 30px 300px 30px;
   }
 }
-main .pagContacto {
+.contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr) grid-template-areas "info formulario" "ubi formulario";
   margin-top: 100px;
-  justify-content: center;
 }
-main .pagContacto section .contacto {
-  margin-left: 100px;
+.contact .datos {
+  width: 794px;
+  margin-left: 150px;
 }
-main .pagContacto section .contacto .telefono {
-  margin-left: 180px;
-  margin-bottom: 100px;
+.contact .datos .info {
+  grid-area: info;
 }
-
-main section .email {
-  margin-left: 180px;
+.contact .datos .info .formulario {
+  grid-area: formulario;
+}
+.contact .datos .info .ubi {
+  grid-area: ubi;
 }
 
 .formulario {
   display: flex;
   justify-content: center;
+  min-width: 500px;
 }
 .formulario form {
   background-color: rgba(0, 0, 0, 0.4);

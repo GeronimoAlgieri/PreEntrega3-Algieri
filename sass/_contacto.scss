@@ -1,22 +1,31 @@
-main .pagContacto{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 100px;
-    justify-content: center;
-    section .contacto {
-      margin-left: 100px;
-      .telefono {
-        margin-left: 180px;
-        margin-bottom: 100px;
+.contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr)
+  grid-template-areas
+  "info formulario"
+  "ubi formulario"
+  ;
+  margin-top: 100px;
+  .datos{
+    width: 794px;
+    margin-left: 150px;
+    .info{
+      grid-area: info;
+      .formulario{
+        grid-area: formulario;
+        }
+        .ubi{
+          grid-area: ubi;
+      }
     }
   }
 }
-main section .email {
-    margin-left: 180px;
-}
+
 .formulario {
   display: flex;
   justify-content: center;
+  min-width: 500px;
   form {
     background-color: rgba(0, 0, 0, 0.4);
     display: grid;

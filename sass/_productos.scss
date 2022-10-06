@@ -61,3 +61,18 @@
     gap: 50px;
     margin-bottom: 30px;
 }
+@media (max-width: 1182px){
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 788px){
+    .productos{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 394px){
+    .container{
+    padding: 0;
+    }
+}
