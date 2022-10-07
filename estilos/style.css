@@ -90,69 +90,6 @@ img .foto-pie {
     align-items: center;
   }
 }
-.titulo {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.historia {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 100px;
-}
-.historia .nosotros {
-  border: solid;
-  border-radius: 10%;
-  justify-content: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-.historia .nosotros .nosotros h2 {
-  text-align: center;
-  padding: 10px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-.historia .nosotros .nosotros h2 p {
-  padding: 5px;
-}
-
-section .master {
-  justify-content: center;
-  margin-left: 100px;
-}
-
-@media (max-width: 1385px) {
-  .historia {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-  }
-  .master {
-    margin-top: 100px;
-    margin-left: 0;
-    margin-right: 100px;
-  }
-}
-@media (max-width: 780px) {
-  .master img {
-    width: 477px;
-    height: 333px;
-  }
-}
-@media (max-width: 680px) {
-  .master img {
-    width: 457px;
-    height: 283px;
-  }
-  .nosotros {
-    margin-left: 50px;
-  }
-  .master {
-    margin-left: 50px;
-  }
-}
 .img-productos img {
   width: 100%;
   height: 200px;
@@ -167,7 +104,7 @@ section .master {
 
 .productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .container {
@@ -221,6 +158,11 @@ section .master {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1575px) {
+  .productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 1182px) {
   .productos {
     grid-template-columns: repeat(2, 1fr);
@@ -257,66 +199,196 @@ section .servicio h2 p {
     margin: 100px 30px 300px 30px;
   }
 }
-.contact {
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr) grid-template-areas "info formulario" "ubi formulario";
-  margin-top: 100px;
-}
-.contact .datos {
-  width: 794px;
-  margin-left: 150px;
-}
-.contact .datos .info {
-  grid-area: info;
-}
-.contact .datos .info .formulario {
-  grid-area: formulario;
-}
-.contact .datos .info .ubi {
-  grid-area: ubi;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
 }
 
-.formulario {
-  display: flex;
-  justify-content: center;
-  min-width: 500px;
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
 }
-.formulario form {
-  background-color: rgba(0, 0, 0, 0.4);
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  width: 500px;
-  margin-top: 40px;
-  padding: 10px;
+
+.container-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
-.formulario form h2 {
-  display: flex;
-  justify-content: center;
+
+.container-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
 }
-.formulario form h2 input, .formulario form h2 textarea {
+
+.container-form a i {
+  color: orange;
+  margin-right: 10px;
+}
+
+.container-form form .campo, textarea {
+  width: 100%;
+  padding: 15px 10px;
   font-size: 15px;
-}
-.formulario form h2 input textarea, .formulario form h2 textarea textarea {
-  min-height: 100px;
-  max-width: 500px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
 }
 
-@media (min-width: 375px) {
-  main .pagContacto {
-    grid-template-columns: repeat(1, 1fr);
+.container-form form textarea {
+  max-width: 530px;
+  min-width: 400px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: orange;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+  background: #e3e3e3;
+}
+
+@media (max-width: 710px) {
+  .container-form {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "info-form" "form";
+  }
+  .container-form .info-form {
+    grid-area: info-form;
+    margin-left: 120px;
+  }
+  .container-form .form {
+    grid-area: form;
+    margin-left: 120px;
   }
 }
-#boton {
-  background-color: #31384A;
-  color: white;
+@media (max-width: 620px) {
+  .container-form {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "info-form" "form";
+  }
+  .container-form .info-form {
+    grid-area: info-form;
+    margin-left: 80px;
+  }
+  .container-form .form {
+    grid-area: form;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 540px) {
+  .container-form {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "info-form" "form";
+  }
+  .container-form .info-form {
+    grid-area: info-form;
+    margin-left: 30px;
+  }
+  .container-form .form {
+    grid-area: form;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .container-form {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "info-form" "form";
+  }
+  .container-form .info-form {
+    grid-area: info-form;
+    margin-left: 0px;
+  }
+  .container-form .form {
+    grid-area: form;
+    margin-left: 0px;
+  }
+}
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.historia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 100px;
+}
+.historia .nosotros {
+  border: solid;
+  border-radius: 10%;
+}
+.historia .nosotros h2 {
+  text-align: center;
   padding: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.historia .nosotros h2 p {
+  padding: 5px;
 }
 
-#boton:hover {
-  cursor: pointer;
+section .master {
+  justify-content: center;
+  margin-left: 100px;
 }
 
+@media (max-width: 1385px) {
+  .historia {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .master {
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 780px) {
+  .master img {
+    width: 477px;
+    height: 333px;
+  }
+}
+@media (max-width: 680px) {
+  .master img {
+    width: 457px;
+    height: 283px;
+  }
+  .nosotros {
+    margin-left: 50px;
+  }
+  .master {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 660px) {
+  .nosotros {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 * {
   padding: 0;
   margin: 0;

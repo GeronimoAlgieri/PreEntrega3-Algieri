@@ -9,12 +9,8 @@
     .nosotros {
         border: solid;
         border-radius: 10%;
-        justify-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-right: 100px;
-        margin-left: 100px;
-        .nosotros h2 {
+        
+        h2{
             text-align: center;
             padding: 10px;
             padding-bottom: 30px;
@@ -56,5 +52,11 @@ section .master {
     }
     .master {
     margin-left: 50px;
+    }
+}
+@media (max-width: 660px){
+    .nosotros{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
