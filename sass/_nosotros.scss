@@ -9,7 +9,11 @@
     .nosotros {
         border: solid;
         border-radius: 10%;
-        
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 100px;
+        margin-left: 100px;
         h2{
             text-align: center;
             padding: 10px;
@@ -24,6 +28,9 @@
 section .master {
     justify-content: center;
     margin-left: 100px;
+    img{
+        border-radius: 10%;
+    }
 }
 @media (max-width: 1385px) {
     .historia {
@@ -47,16 +54,10 @@ section .master {
     width: 457px;
     height: 283px;
     }
-    .nosotros {
-    margin-left: 50px;
-    }
-    .master {
-    margin-left: 50px;
-    }
 }
-@media (max-width: 660px){
-    .nosotros{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
+// @media (max-width: 660px){
+//     .nosotros{
+//         margin-left: 20px;
+//         margin-right: 20px;
+//     }
+// }

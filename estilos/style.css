@@ -179,10 +179,14 @@ img .foto-pie {
   }
 }
 section .servicio {
+  border: solid;
+  border-radius: 10%;
+  justify-content: center;
   margin-top: 100px;
   margin-left: 180px;
   margin-right: 180px;
   margin-bottom: 300px;
+  padding: 50px;
 }
 section .servicio h2 {
   display: flex;
@@ -338,6 +342,11 @@ section .servicio h2 p {
 .historia .nosotros {
   border: solid;
   border-radius: 10%;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 .historia .nosotros h2 {
   text-align: center;
@@ -352,6 +361,9 @@ section .servicio h2 p {
 section .master {
   justify-content: center;
   margin-left: 100px;
+}
+section .master img {
+  border-radius: 10%;
 }
 
 @media (max-width: 1385px) {
@@ -375,18 +387,6 @@ section .master {
   .master img {
     width: 457px;
     height: 283px;
-  }
-  .nosotros {
-    margin-left: 50px;
-  }
-  .master {
-    margin-left: 50px;
-  }
-}
-@media (max-width: 660px) {
-  .nosotros {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 * {

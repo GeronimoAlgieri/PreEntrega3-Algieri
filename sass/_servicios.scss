@@ -1,8 +1,12 @@
 section .servicio {
+    border: solid;
+    border-radius: 10%;
+    justify-content: center;
     margin-top: 100px;
     margin-left: 180px;
     margin-right: 180px;
     margin-bottom: 300px;
+    padding: 50px;
     h2 {
         display: flex;
         justify-content: center;
