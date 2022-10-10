@@ -2,62 +2,69 @@
     text-align: center;
     margin-top: 50px;
 }
-.historia {
+.historia{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 100px;
-    .nosotros {
-        border: solid;
-        border-radius: 10%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "nosotros master"
+    ;
+    grid-gap: 80px;
+    margin-top: 70px;
+    .master{
+        grid-area: master;
+        margin-top: 20px;
         justify-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-right: 100px;
-        margin-left: 100px;
-        h2{
-            text-align: center;
-            padding: 10px;
-            padding-bottom: 30px;
-            padding-top: 30px;
-            p {
-                padding: 5px;
-            }
+        display: flex;
+        img{
+            min-width: 350px;
+            border-radius: 10%;
+        }
+        .nosotros{
+            grid-area: nosotros;
         }
     }
 }
-section .master {
+.nosotros{
+    grid-area: nosotros;
     justify-content: center;
-    margin-left: 100px;
-    img{
-        border-radius: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+    h2{
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        p{
+            padding: 5px;
+        }
     }
 }
-@media (max-width: 1385px) {
-    .historia {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    }
-    .master {
-    margin-top: 100px;
-    margin-left: 0;
-    margin-right: 100px;
+@media (max-width: 1200px){
+    .historia{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "nosotros"
+        "master"
+        ;
     }
 }
-@media (max-width: 780px) {
-    .master img {
-    width: 477px;
-    height: 333px;
+@media (max-width: 622px){
+    .master img{
+        width: 457px;
+        height: 283px;
     }
 }
-@media (max-width: 680px) {
-    .master img {
-    width: 457px;
-    height: 283px;
+@media (max-width: 459px){
+    .master img{
+        width: 407px;
+        height: 233px;
     }
 }
-// @media (max-width: 660px){
-//     .nosotros{
-//         margin-left: 20px;
-//         margin-right: 20px;
-//     }
-// }
+@media (max-width: 408px){
+    .master img{
+        width: 357px;
+        height: 183px;
+    }
+}
