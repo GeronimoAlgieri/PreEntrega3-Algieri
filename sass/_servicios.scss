@@ -1,24 +1,58 @@
-section .servicio {
-    border: solid;
-    border-radius: 10%;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-bottom: 300px;
-    padding: 50px;
-    h2 {
-        display: flex;
-        justify-content: center;
-        p {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
+.nuestroServicio{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "servicio servicio"
+    "almacen almacen-fuera"
+    ;
+    justify-items: center;
+    align-items: center;
+    .servicio{
+        grid-area: servicio;
+        max-width: 1200px;
+        text-align: center;
     }
 }
-@media (max-width: 1000px) {
-    section .servicio {
-    margin: 100px 30px 300px 30px;
+.almacen{
+    grid-area: almacen;
+    img{
+        border-radius: 10%;
+    }
+}
+.almacen-fuera{
+    grid-area: almacen-fuera;
+    img{
+        border-radius: 10%;
+    }
+}
+@media (min-width: 350px)and(max-width: 1415px){
+    .nuestroServicio{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "servicio"
+        "almacen"
+        "almacen-fuera"
+        ;
+        grid-gap: 50px;
+    }
+}
+@media (max-width: 703px){
+    .nuestroServicio img{
+        width: 600px;
+        height: 376px;
+    }
+}
+@media (max-width: 603px){
+    .nuestroServicio img{
+        width: 500px;
+        height: 276px;
+    }
+}
+@media (max-width: 503px){
+    .nuestroServicio img{
+        width: 370px;
+        height: 200px;
     }
 }

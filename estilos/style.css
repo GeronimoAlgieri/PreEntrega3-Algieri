@@ -178,40 +178,84 @@ img .foto-pie {
     padding: 0;
   }
 }
-section .servicio {
-  border: solid;
-  border-radius: 10%;
-  justify-content: center;
-  margin-top: 100px;
-  margin-left: 180px;
-  margin-right: 180px;
-  margin-bottom: 300px;
-  padding: 50px;
+.nuestroServicio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "servicio servicio" "almacen almacen-fuera";
+  justify-items: center;
+  align-items: center;
 }
-section .servicio h2 {
-  display: flex;
-  justify-content: center;
-}
-section .servicio h2 p {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+.nuestroServicio .servicio {
+  grid-area: servicio;
+  max-width: 1200px;
+  text-align: center;
 }
 
-@media (max-width: 1000px) {
-  section .servicio {
-    margin: 100px 30px 300px 30px;
+.almacen {
+  grid-area: almacen;
+}
+.almacen img {
+  border-radius: 10%;
+}
+
+.almacen-fuera {
+  grid-area: almacen-fuera;
+}
+.almacen-fuera img {
+  border-radius: 10%;
+}
+
+@media (min-width: 350px) and (max-width: 1415px) {
+  .nuestroServicio {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "servicio" "almacen" "almacen-fuera";
+    grid-gap: 50px;
+  }
+}
+@media (max-width: 703px) {
+  .nuestroServicio img {
+    width: 600px;
+    height: 376px;
+  }
+}
+@media (max-width: 603px) {
+  .nuestroServicio img {
+    width: 500px;
+    height: 276px;
+  }
+}
+@media (max-width: 503px) {
+  .nuestroServicio img {
+    width: 370px;
+    height: 200px;
   }
 }
 .container-form {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 50px;
-  margin-top: 90px;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas: "info-form form" "info-form form-1" "info-form form-2";
+  width: 100%;
+  margin-top: 100px;
+  padding: 50px 150px 50px 150px;
+}
+
+.form {
+  grid-area: form;
+}
+
+.form-1 {
+  grid-area: form-1;
+}
+
+.form-2 {
+  grid-area: form-2;
+}
+
+.info-form {
+  grid-area: info-form;
 }
 
 .container-form h2 {
@@ -243,18 +287,7 @@ section .servicio h2 p {
 .container-form form .campo, textarea {
   width: 100%;
   padding: 15px 10px;
-  font-size: 15px;
-  border: 1px solid #dbdbdb;
   margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px;
-}
-
-.container-form form textarea {
-  max-width: 530px;
-  min-width: 400px;
-  min-height: 140px;
-  max-height: 150px;
 }
 
 .container-form .btn-enviar {
@@ -268,65 +301,25 @@ section .servicio h2 p {
   cursor: pointer;
   transition: all 300ms ease;
 }
-
 .container-form .btn-enviar:hover {
   background: #e3e3e3;
 }
 
-@media (max-width: 710px) {
+@media (min-width: 720px) and (max-width: 1600px) {
   .container-form {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "info-form" "form";
-  }
-  .container-form .info-form {
-    grid-area: info-form;
-    margin-left: 120px;
-  }
-  .container-form .form {
-    grid-area: form;
-    margin-left: 120px;
+    padding: 50px;
   }
 }
-@media (max-width: 620px) {
+@media (min-width: 300px) and (max-width: 720px) {
   .container-form {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "info-form" "form";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "info-form" "form" "form-1" "form-2";
+    height: 720px;
+    padding: 30px;
   }
-  .container-form .info-form {
-    grid-area: info-form;
-    margin-left: 80px;
-  }
-  .container-form .form {
-    grid-area: form;
-    margin-left: 80px;
-  }
-}
-@media (max-width: 540px) {
-  .container-form {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "info-form" "form";
-  }
-  .container-form .info-form {
-    grid-area: info-form;
-    margin-left: 30px;
-  }
-  .container-form .form {
-    grid-area: form;
-    margin-left: 30px;
-  }
-}
-@media (max-width: 450px) {
-  .container-form {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "info-form" "form";
-  }
-  .container-form .info-form {
-    grid-area: info-form;
-    margin-left: 0px;
-  }
-  .container-form .form {
-    grid-area: form;
-    margin-left: 0px;
+  .form {
+    margin-top: 50px;
   }
 }
 .titulo {
@@ -444,7 +437,7 @@ body {
 
 .novedades {
   display: grid;
-  grid-template-columns: repeat(4, 480px);
+  grid-template-columns: repeat(2, 480px);
 }
 
 .productos-destacados img {

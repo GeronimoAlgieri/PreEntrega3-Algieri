@@ -33,7 +33,6 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="./productos.html">Limpieza</a></li>
               <li><a class="dropdown-item" href="./productos.html">Bazar</a></li>
-              <li><hr class="dropdown-divider"></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -46,6 +45,9 @@
       </div>
     </div>
   </nav>
+  <div class="titulo"><hr>
+    <h1>Contactanos</h1><hr>
+  </div>
   <section class="container-form">
     <div class="info-form">
       <h2>Contacto</h2>
@@ -54,12 +56,19 @@
       <a href="#"><i class="fa fa-envelope"></i>distribuidoralgieri@gmail.com</a>
       <a href="#"><i class="fa fa-map-marked"></i>Calle Chile 1140, a 3 cuadras de Av. Carcano.</a>
     </div>
-    <form action="#" autocomplete="off" class="form">
-      <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
-      <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
-      <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+    <div class="mb-3 form">
+      <label for="exampleFormControlInput1" class="form-label">Ingresa tu nombre</label>
+      <input type="text" name="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
+    </div>
+    <div class="mb-3 form-1">
+      <label for="exampleFormControlInput1" class="form-label">Ingresa tu Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3 form-2">
+      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <textarea class="form-control" placeholder="Ingresa tu mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
       <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
-    </form>
+    </div>
   </section>
   <footer>
       <div class="grupo-1">

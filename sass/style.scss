@@ -50,7 +50,8 @@ body {
 }
 .novedades{
   display: grid;
-  grid-template-columns: repeat(4, 480px);
+  grid-template-columns: repeat(2, 480px);
+
 }
 
 .productos-destacados img {
