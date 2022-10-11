@@ -1,1 +1,23 @@
 $color: rgb(231, 134, 6);
+
+.titulos{
+    text-align: center;
+    margin-top: 50px;
+}
+.titulo-nosotros{
+    @extend .titulos;
+}
+.titulo-contacto{
+    @extend .titulos;
+}
+.titulo-servicios{
+    @extend .titulos;
+}
+
+@mixin size ($width,$height) {
+    height: $height;
+    width: $width;
+}
+.card img{
+    @include size(330px,300px)
+}
