@@ -196,6 +196,7 @@ img .foto-pie {
   grid-area: servicio;
   max-width: 1200px;
   text-align: center;
+  margin: 10px;
 }
 
 .almacen {
@@ -378,17 +379,21 @@ img .foto-pie {
     width: 457px;
     height: 283px;
   }
+  .nosotros {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 @media (max-width: 459px) {
   .master img {
     width: 407px;
-    height: 233px;
+    height: 260px;
   }
 }
 @media (max-width: 408px) {
   .master img {
     width: 357px;
-    height: 183px;
+    height: 230px;
   }
 }
 * {
