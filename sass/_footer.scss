@@ -51,6 +51,9 @@ footer .grupo-1 .red-social a {
     margin-right: 10px;
     background-color: #0d2033;
     text-align: center;
+    &:hover{
+        color: blue;
+    }
 }
 p {
     border: 5px;

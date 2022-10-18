@@ -82,6 +82,9 @@ footer .grupo-1 .red-social a {
   background-color: #0d2033;
   text-align: center;
 }
+footer .grupo-1 .red-social a:hover {
+  color: blue;
+}
 
 p {
   border: 5px;
