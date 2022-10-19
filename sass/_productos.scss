@@ -30,23 +30,27 @@
         margin: 20px;
         text-align: center;
         transition: all 0.25s;
-        // img {
-        //     width: 330px;
-        //     height: 300px;
-            h4 {
-                font-weight: 600;
-                p {
-                    padding: 0 1rem;
-                    font-size: 16px;
-                    font-weight: 300;
-                    a {
-                        font-weight: 500;
-                        text-decoration: none;
-                        color: #3498db;
-                    }
-                } 
-            }
-        // }
+        h4 {
+            font-weight: 600;
+            p {
+                padding: 0 1rem;
+                font-size: 16px;
+                font-weight: 300;
+            } 
+        }
+    }
+}
+.container a {
+    margin: 0px 80px 50px 80px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    &:hover{
+        background-color: #2fb4cc;
+        color: #fff;
     }
 }
 

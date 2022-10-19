@@ -147,10 +147,19 @@ img .foto-pie {
   font-size: 16px;
   font-weight: 300;
 }
-.container .card h4 p a {
-  font-weight: 500;
+
+.container a {
+  margin: 0px 80px 50px 80px;
   text-decoration: none;
-  color: #3498db;
+  display: inline-block;
+  padding: 5px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+}
+.container a:hover {
+  background-color: #2fb4cc;
+  color: #fff;
 }
 
 .card:hover {
