@@ -16,8 +16,8 @@ $color: rgb(231, 134, 6);
 
 @mixin size ($width,$height) {
     height: $height;
-    width: $width;
+    min-width: $width;
 }
 .card img{
-    @include size(330px,300px)
+    @include size(285px,262px)
 }

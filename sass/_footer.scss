@@ -41,18 +41,22 @@ footer .grupo-2 {
     padding-bottom: 5px;
     font-family: "Playfair Display", serif;
 }
-footer .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #0d2033;
-    text-align: center;
-    &:hover{
-        color: blue;
+footer .grupo-1 .red-social{
+    display: grid;
+    grid-template-columns: repeat(4,65px);
+    a {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+        &:hover{
+            color: blue;
+        }
     }
 }
 p {

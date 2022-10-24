@@ -12,9 +12,12 @@
         margin-top: 20px;
         justify-content: center;
         display: flex;
+        min-width: 250px;
         img{
-            min-width: 350px;
+            min-width: 300px;
+            min-height: 150px;
             border-radius: 10%;
+            margin: 0px 5px 0px 5px;
         }
         .nosotros{
             grid-area: nosotros;
@@ -48,24 +51,8 @@
     }
 }
 @media (max-width: 622px){
-    .master img{
-        width: 457px;
-        height: 283px;
-    }
     .nosotros{
         margin-right: 10px;
         margin-left: 10px;
-    }
-}
-@media (max-width: 459px){
-    .master img{
-        width: 407px;
-        height: 260px;
-    }
-}
-@media (max-width: 408px){
-    .master img{
-        width: 357px;
-        height: 230px;
     }
 }

@@ -27,7 +27,7 @@
         border-radius: 10%;
     }
 }
-@media (min-width: 350px)and(max-width: 1415px){
+@media (min-width: 300px)and(max-width: 1415px){
     .nuestroServicio{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(1,1fr);
@@ -55,5 +55,11 @@
     .nuestroServicio img{
         width: 370px;
         height: 200px;
+    }
+}
+@media (max-width: 375px){
+    .nuestroServicio img{
+        width: 320px;
+        height: 170px;
     }
 }

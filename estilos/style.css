@@ -4,8 +4,8 @@
 }
 
 .card img {
-  height: 300px;
-  width: 330px;
+  height: 262px;
+  min-width: 285px;
 }
 
 nav {
@@ -71,6 +71,10 @@ footer .grupo-2 {
   font-family: "Playfair Display", serif;
 }
 
+footer .grupo-1 .red-social {
+  display: grid;
+  grid-template-columns: repeat(4, 65px);
+}
 footer .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
@@ -130,7 +134,7 @@ img .foto-pie {
   margin-bottom: 80px;
 }
 .container .card {
-  width: 330px;
+  width: 300px;
   height: 430px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -146,6 +150,10 @@ img .foto-pie {
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
+}
+
+.card img {
+  margin-bottom: 10px;
 }
 
 .container a {
@@ -225,7 +233,7 @@ img .foto-pie {
   border-radius: 10%;
 }
 
-@media (min-width: 350px) and (max-width: 1415px) {
+@media (min-width: 300px) and (max-width: 1415px) {
   .nuestroServicio {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -249,6 +257,12 @@ img .foto-pie {
   .nuestroServicio img {
     width: 370px;
     height: 200px;
+  }
+}
+@media (max-width: 375px) {
+  .nuestroServicio img {
+    width: 320px;
+    height: 170px;
   }
 }
 .container-form {
@@ -353,10 +367,13 @@ img .foto-pie {
   margin-top: 20px;
   justify-content: center;
   display: flex;
+  min-width: 250px;
 }
 .historia .master img {
-  min-width: 350px;
+  min-width: 300px;
+  min-height: 150px;
   border-radius: 10%;
+  margin: 0px 5px 0px 5px;
 }
 .historia .master .nosotros {
   grid-area: nosotros;
@@ -387,25 +404,9 @@ img .foto-pie {
   }
 }
 @media (max-width: 622px) {
-  .master img {
-    width: 457px;
-    height: 283px;
-  }
   .nosotros {
     margin-right: 10px;
     margin-left: 10px;
-  }
-}
-@media (max-width: 459px) {
-  .master img {
-    width: 407px;
-    height: 260px;
-  }
-}
-@media (max-width: 408px) {
-  .master img {
-    width: 357px;
-    height: 230px;
   }
 }
 * {
@@ -469,7 +470,7 @@ body {
   margin-top: 70px;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 300px) {
   .productos-1 {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -499,5 +500,10 @@ body {
   }
   .novedades {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 370px) {
+  .container {
+    min-width: 325px;
   }
 }/*# sourceMappingURL=style.css.map */
