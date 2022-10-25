@@ -41,18 +41,3 @@
         }
     }
 }
-@media (max-width: 1200px){
-    .historia{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-areas:
-        "nosotros"
-        "master"
-        ;
-    }
-}
-@media (max-width: 622px){
-    .nosotros{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-}

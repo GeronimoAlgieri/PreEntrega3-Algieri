@@ -1,0 +1,76 @@
+/* nosotros */
+.historia{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "nosotros master"
+    ;
+    @media (min-width:300px)and(max-width: 1200px){
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "nosotros"
+        "master"
+        ;
+    }
+}
+.nosotros{
+    margin-right: 70px;
+    margin-left: 70px;
+    @media (min-width:300px)and(max-width: 622px){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+/* productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media (min-width:300px)and(max-width: 788px){
+        grid-template-columns: repeat(1,1fr);
+    }
+    @media (min-width:788px)and(max-width: 1182px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width:1182px)and(max-width: 1575px){
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/* servicios */
+.nuestroServicio{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "servicio servicio"
+    "almacen almacen-fuera"
+    ;
+    @media (min-width: 300px)and(max-width: 1415px){
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "servicio"
+        "almacen"
+        "almacen-fuera"
+        ;
+        grid-gap: 50px;
+    }
+}
+.nuestroServicio img{
+    @media (min-width:603px)and(max-width: 703px){
+        width: 600px;
+        height: 376px;
+    }
+    @media (min-width:503px)and(max-width: 603px){
+        width: 500px;
+        height: 276px;
+    }
+    @media (min-width:375px)and(max-width: 503px){
+        width: 370px;
+        height: 200px;
+    }
+    @media (min-width:300px)and(max-width: 375px){
+        width: 320px;
+        height: 170px;
+    }
+}
+

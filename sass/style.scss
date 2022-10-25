@@ -5,6 +5,7 @@
 @import "servicios";
 @import "contactos";
 @import "nosotros";
+@import "media";
 
 * {
   padding: 0;
@@ -18,18 +19,12 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.6;
 }
-
-.lista-productos a {
-  text-decoration: none;
-  color: black;
-}
 .img-principal {
   display: flex;
   justify-content: center;
-}
-
-.img-principal img {
-  min-width: 280px;
+  img {
+    min-width: 280px;
+  }
 }
 
 /* Inicio */
@@ -51,7 +46,6 @@ body {
 .novedades{
   display: grid;
   grid-template-columns: repeat(2, 480px);
-
 }
 
 .productos-destacados img {
@@ -65,41 +59,37 @@ body {
   margin-top: 70px;
 }
 
-@media (min-width: 300px){
-  .productos-1{
-    grid-template-columns: repeat(1,1fr);
+.productos-1{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 300px){
+      grid-template-columns: repeat(1,1fr);
   }
-  .novedades{
-    grid-template-columns: repeat(1,1fr);
+  @media (min-width: 890px){
+      grid-template-columns: repeat(2,1fr);
   }
-}
-@media (min-width: 890px){
-  .productos-1{
-    grid-template-columns: repeat(2,1fr);
+  @media (min-width: 1300px){
+      grid-template-columns: repeat(3,1fr);
   }
-  .novedades{
-    grid-template-columns: repeat(2,1fr);
-  }
-}
-@media (min-width: 1300px){
-  .productos-1{
-    grid-template-columns: repeat(3,1fr);
-  }
-  .novedades{
-    grid-template-columns: repeat(2,1fr);
+  @media (min-width: 1600px){
+      grid-template-columns: repeat(4,1fr);
   }
 }
-@media (min-width: 1600px){
-  .productos-1{
-    grid-template-columns: repeat(4,1fr);
+.novedades{
+  display: grid;
+  grid-template-columns: repeat(2, 480px);
+  @media (min-width: 300px){
+      grid-template-columns: repeat(1,1fr);
   }
-  .novedades{
-    grid-template-columns: repeat(4,1fr);
+  @media (min-width: 890px){
+      grid-template-columns: repeat(2,1fr);
+  }
+  @media (min-width: 1600px){
+      grid-template-columns: repeat(4,1fr);
   }
 }
-@media (max-width: 370px){
-  .container{
-    min-width: 325px;
+.container{
+  @media (max-width: 370px){
+      min-width: 325px;
   }
-  
 }
